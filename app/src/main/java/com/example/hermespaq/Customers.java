@@ -13,7 +13,7 @@ public class Customers extends AppCompatActivity {
 
     int[] Images = {R.drawable.hola1, R.drawable.hola2, R.drawable.hola3, R.drawable.hola4};
 
-    String[] Names = {"Antonio Galvan", "Maria Mejia", "Julio Castro", "Laura Pineda"};
+    String[] Names = {"Antonio Galvan", "Julio Castro", "Maria Mejia", "Laura Pineda"};
 
     String[] Descriptions = {"2 paquetes", "1 paquete", "3 paquetes", "7 paquetes"};
 
@@ -48,7 +48,7 @@ public class Customers extends AppCompatActivity {
 
         @Override
         public View getView(int i, View view, ViewGroup viewGroup) {
-            view =getLayoutInflater().inflate(R.layout.customlayout,null);
+            view = getLayoutInflater().inflate(R.layout.customlayout,null);
 
             ImageView imageView=(ImageView)view.findViewById(R.id.imageView);
             TextView textView_name=(TextView)view.findViewById(R.id.textView_name);
