@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 validate(Name.getText().toString(), Password.getText().toString());
             }
-        })
+        });
     }
 
     private void validate(String userName, String userPassword){
