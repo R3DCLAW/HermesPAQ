@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HermesPAQ</string>
+    <string name="title_activity_customers">Customers</string>
 </resources>

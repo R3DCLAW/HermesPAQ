@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void validate(String userName, String userPassword){
-        if((userName.equals("Admin"))&& (userPassword.equals("holamundo"))){
-            Intent intent = new Intent(MainActivity.this, Customers.class);
+        if((userName.equals("Admin")) && (userPassword.equals("holamundo"))){
+            Intent intent = new Intent(getApplicationContext(), Customers.class);
             startActivity(intent);
         }else{
             Toast.makeText(getApplicationContext(),"Wrong Information!", Toast.LENGTH_SHORT).show();
