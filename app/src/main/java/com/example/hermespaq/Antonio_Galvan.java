@@ -8,11 +8,24 @@ import android.widget.Button;
 
 public class Antonio_Galvan extends AppCompatActivity {
 
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_antonio);
 
+        button = (Button) findViewById(R.id.volver1);
+        button.setOnClickListener(new View.OnClickListener(){
+
+            @Override
+            public void onClick(View v) {
+                startActivity();
+            }
+        });
+    }
+    public void startActivity() {
+        Intent intent = new Intent(this, Customers.class);
+        startActivity(intent);
     }
 }
